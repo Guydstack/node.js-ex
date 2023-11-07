@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamba</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>רשימת מכוניות</h1>
+
+    <h2>הוסף דגם רכב חדש</h2>
+    <form onsubmit="addACar(event)" action="/cars" method="post">
+        <label>Your Brand Name</label>
+        <input id="brand" type="text" name="brand" />
+        <button>שלח!</button>
+    </form>
+
+    <ul id="cars">
+        
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
